@@ -22,5 +22,5 @@ This repo shows some example usage of [case-classy](https://github.com/47deg/cas
          .naming(KebabCase)
          .decoder
    ```
- - Defining custom decoders, with [Ficus](https://github.com/iheartradio/ficus) interoperability, see `xyz.casperkoning.custom.decoders`
+ - Defining custom decoders, see `xyz.casperkoning.custom.decoders`
 
