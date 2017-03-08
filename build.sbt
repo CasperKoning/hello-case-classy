@@ -9,5 +9,6 @@ val caseClassyVersion = "0.3.0"
 libraryDependencies ++= Seq(
   "com.fortysevendeg" %% "classy-core"            % caseClassyVersion,
   "com.fortysevendeg" %% "classy-config-typesafe" % caseClassyVersion,
-  "com.fortysevendeg" %% "classy-generic"         % caseClassyVersion
+  "com.fortysevendeg" %% "classy-generic"         % caseClassyVersion,
+  "org.scalatest"     %% "scalatest"              % "3.0.1" % "test"
 )

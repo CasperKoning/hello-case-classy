@@ -17,7 +17,7 @@ package object custom {
       readConfig[String]("first-field").join(
       readConfig[String]("second-field")).join(
       readConfig[Int]("version")).map {
-        case (firstField, secondField, version) => new VerySpecialCustomSettings(s"$firstField-$secondField-$version")
+        case (firstField, secondField, version) => VerySpecialCustomSettings(s"$firstField-$secondField-$version")
       }
   }
 }

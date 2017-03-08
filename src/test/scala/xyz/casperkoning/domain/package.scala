@@ -16,9 +16,7 @@ package object domain {
 
   case class Nest(int: Int)
 
-  class VerySpecialCustomSettings(composedField: String) {
-    override def toString: String = composedField
-  }
+  case class VerySpecialCustomSettings(composedField: String)
 
   case class Settings(
     primitiveSettings: PrimitiveSettings,
