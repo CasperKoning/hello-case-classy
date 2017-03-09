@@ -18,13 +18,26 @@ package object domain {
 
   case class VerySpecialCustomSettings(composedField: String)
 
+  sealed trait Planet
+  case object Earth extends Planet
+  case object Mars extends Planet
+  case object Pluto extends Planet
+  case class ArbitraryPlanet(distance: Int) extends Planet
+
+  sealed trait Animal
+  case object Cat extends Animal
+  case object Dog extends Animal
+  case class HummingBird(species: String) extends Animal
+
   case class Settings(
     primitiveSettings: PrimitiveSettings,
     stringSettings: StringSettings,
     listSettings: ListSettings,
     finiteDurationSettings: FiniteDurationSettings,
     nestedSettings: NestedSettings,
-    verySpecialCustomSettings: VerySpecialCustomSettings
+    verySpecialCustomSettings: VerySpecialCustomSettings,
+    planets: List[Planet],
+    animals: List[Animal]
   )
 
 }

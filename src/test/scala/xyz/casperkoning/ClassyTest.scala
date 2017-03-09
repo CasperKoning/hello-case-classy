@@ -46,7 +46,9 @@ class ClassyTest extends FlatSpec with Matchers {
           ),
           verySpecialCustomSettings = VerySpecialCustomSettings(
             composedField = "aaaa-bbbb-1"
-          )
+          ),
+          planets = List(Pluto, ArbitraryPlanet(distance = 10)),
+          animals = List(Dog, HummingBird(species = "ruby-throated" ))
         )
     }
   }
